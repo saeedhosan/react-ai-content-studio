@@ -1,0 +1,109 @@
+@import url(./assets/css/bootstrap.min.css);
+@import url(./assets/css/icons.css);
+@import url(./assets/css/material.css);
+@import url(./assets/css/scale-extreme.css);
+@import url(./assets/css/simplebar.css);
+@import url(./assets/css/app.css);
+
+.plan-price {
+  margin: auto;
+  width: max-content;
+  padding: 30px 0;
+}
+ul.plan-items {
+  padding: 14px;
+}
+/* .orang-box-shadow {
+  box-shadow: 1px 0px 20px 1px rgb(174 44 44 / 5%),
+    0px 0px 20px 0px rgb(0 0 0 / 6%);
+} */
+.orang-box-shadow {
+  box-shadow: 1px 0px 20px 1px rgb(174 44 44 / 7%),
+    0px 0px 20px 0px rgb(0 0 0 / 6%);
+}
+.orang-box-shadow:hover,
+.orang-box-shadow:focus {
+  box-shadow: 0px 0px 18px 0 rgb(50 50 50 / 9%),
+    0px 0px 20px -1px rgb(50 50 50 / 5%), 0px 0px 20px 0 rgb(50 50 50 / 14%) !important;
+  transition: all 0.2s;
+}
+
+.template i {
+  color: #fe4e00 !important;
+}
+
+.b-radius-none {
+  border-radius: 0px !important;
+}
+.br-0 {
+  border-radius: 0px !important;
+}
+.hover\:text-white:focus,
+.hover\:text-white:hover {
+  color: #ffffff !important;
+}
+.btn-asp-blue {
+  background-color: #5171a5;
+  border-color: #5171a5;
+}
+
+.tabs-menu-body .card {
+  box-shadow: 0 0 20px 0px rgb(33 33 33 / 14%);
+  transition: all 0.2s;
+}
+
+#prices-wrapper .card:hover,
+#prices-wrapper .card:focus {
+  box-shadow: 0px 0px 18px 0 rgb(50 50 50 / 9%),
+    0px 0px 20px -1px rgb(50 50 50 / 5%), 0px 0px 20px 0 rgb(50 50 50 / 14%) !important;
+  transition: all 0.2s;
+}
+
+#template-filter .nav-item {
+  margin: 6px 10px;
+  margin-left: 0;
+}
+#template-filter .nav-item .active {
+  background-color: #000000;
+}
+#template-filter .nav-item a {
+  font-size: 12px;
+}
+
+.btn-normal {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 0px;
+  color: #fff !important;
+  background-color: #fe4e00;
+  border-color: #fe4e00;
+  box-shadow: none !important;
+}
+
+.csr-p {
+  cursor: pointer;
+}
+
+/***/
+.ql-container {
+  min-height: 10rem;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.ql-editor {
+  height: 100%;
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+  padding-bottom: 60px;
+}
+.rdt_TableCell {
+  min-width: auto !important;
+}
+/* .rdt_TableCol {
+  justify-content: center;
+} */

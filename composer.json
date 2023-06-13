@@ -1,0 +1,25 @@
+{
+  "name": "saeed/appsaeed",
+  "description": "wp theme by appsaeed",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Saeed",
+      "email": "appsaeed7@gmail.com"
+    }
+  ],
+  "require": {
+    "tareq1988/wp-eloquent": "dev-master",
+    "stripe/stripe-php": "^10.11"
+  },
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true,
+      "php-http/discovery": true
+    }
+  }
+}

@@ -1,0 +1,391 @@
+<?php
+
+namespace App\config;
+
+class Templates
+{
+    public static function dashboard()
+    {
+        return  [
+            [
+                "_url" => "blog-titles",
+                "name" => "Blog Titles",
+                "icon" => "fa-solid fa-message-text blog-icon",
+                "text" => "Make blogging fast and easy with RightWrite.io. Get creative, fresh titles with our state of the art technology!",
+                "category" => "blog"
+
+            ],
+            [
+                "_url" => "blog-sections",
+                "name" => "Blog Sections",
+                "icon" => "fa-solid fa-message-lines blog-icon",
+                "text" => "Unlock the power of incredible blog sections - organize your blog posts quickly and easily, without lifting a finger.",
+                "category" => "blog"
+            ],
+            [
+                "_url" => "blog-ideas",
+                "name" => "Blog Ideas",
+                "icon" => "fa-solid fa-message-dots blog-icon",
+                "text" => "Explore the world of blogging with us! Get great blog ideas and create content with ease.",
+                "category" => "blog"
+            ],
+            [
+                "_url" => "blog-intros",
+                "name" => "Blog Intros",
+                "icon" => "fa-solid fa-message-exclamation blog-icon",
+                "text" => "Write great blog intros in seconds - RightWrite.io creates the perfect starts to your blog posts!",
+                "category" => "blog"
+            ],
+            [
+                "_url" => "blog-conclusions",
+                "name" => "Blog Conclusions",
+                "icon" => "fa-solid fa-message-check blog-icon",
+                "text" => "Grow your audience and get great blog post conclusions that leave your readers wanting more!",
+                "category" => "blog"
+            ],
+            [
+                "_url" => "welcome-emails",
+                "name" => "Welcome Emails",
+                "icon" => "fa-solid fa-envelope-open-text main-icon",
+                "text" => "Experience the power of great welcome emails! Make your customers feel special with personalized email copy.",
+                "category" => "email"
+            ],
+            [
+                "_url" => "cold-emails",
+                "name" => "Cold Emails",
+                "icon" => "fa-solid fa-mailbox main-icon",
+                "text" => "Get great cold emails now! Just click a button and have RightWrite write it for you!",
+                "category" => "email"
+            ],
+            [
+                "_url" => "flow-up-emails",
+                "name" => "Follow-Up Emails",
+                "icon" => "fa-solid fa-reply-all main-icon",
+                "text" => "Amazing follow up emails have never been so easy! Experience the power of AI right now.",
+                "category" => "email"
+            ],
+            [
+                "_url" => "amazon-product-description",
+                "name" => "Amazon Product Descriptions",
+                "icon" => "fa-brands fa-amazon other-icon",
+                "text" => "Are you selling products on Amazon? Generate money making descriptions in seconds!",
+                "category" => "other"
+            ],
+            [
+                "_url" => "facebook-ads",
+                "name" => "Facebook Ads",
+                "icon" => "fa-brands fa-facebook social-icon",
+                "text" => "Quickly create high converting Facebook Ad copy without any of the headaches.",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "instagram-captions",
+                "name" => "Instagram Captions",
+                "icon" => "fa-brands fa-instagram social-icon",
+                'text' => "Engage with your audience on Instagram with intriguing captions written for you by RightWrite",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "instagram-hashtags-generator",
+                "name" => "Instagram Hashtags Generator",
+                "icon" => "fa-brands fa-instagram social-icon",
+                "text" => "Don't know what hashtags to use to make your Instagram posts easy to find? Let RightWrite do it for you!",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "social-media-posts-personal",
+                "name" => "Social Media Posts (Personal)",
+                "icon" => "fa-solid fa-thumbs-up social-icon",
+                "text" => "Create scroll stopping social media posts for your personal feeds and pages… all in a few clicks of a button!",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "socail-media-posts-business",
+                "name" => "Social Media Posts (Business)",
+                "icon" => "fa-solid fa-thumbs-up social-icon",
+                "text" => "Create scroll stopping social media posts for your business feeds and pages… all in a few clicks of a button!",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "facebook-headlines",
+                "name" => "Facebook Headlines",
+                "icon" => "fa-brands fa-facebook social-icon",
+                "text" => "Generate amazing, eyeball grabbing Facebook headlines in seconds right inside your RightWrite.io account.",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "google-ads-headlines",
+                "name" => "Google Ads Headlines",
+                "icon" => "fa-brands fa-google social-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "google-ads-description",
+                "name" => "Google Ads Description",
+                "icon" => "fa-brands fa-google social-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "article-generator",
+                "name" => "Article Generator",
+                "icon" => "fa-solid fa-file-lines main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "content-rewriter",
+                "name" => "Content Rewriter",
+                "icon" => "fa-solid fa-square-check main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "paragraph-generator",
+                "name" => "Paragraph Generator",
+                "icon" => "fa-solid fa-line-columns main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "talking-points",
+                "name" => "Talking Points",
+                "icon" => "fa-solid fa-list-check main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "pros-and-cons",
+                "name" => "Pros & Cons",
+                "icon" => "fa-solid fa-code-compare main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "summarize-text",
+                "name" => "Summarize Text",
+                "icon" => "fa-solid fa-file-contract main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "product-description",
+                "name" => "Product Description",
+                "icon" => "fa-solid fa-list-check main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "startup-name-generator",
+                "name" => "Startup Name Generator",
+                "icon" => "fa-solid fa-lightbulb-on main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "product-name-generator",
+                "name" => "Product Name Generator",
+                "icon" => "fa-solid fa-box-circle-check main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "blog"
+            ],
+            [
+                "_url" => "academic-essay",
+                "name" => "Academic Essay",
+                "icon" => "fa-solid fa-scroll-old main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "creative-stories",
+                "name" => "Creative Stories",
+                "icon" => "fa-solid fa-books main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "summarize-for-2nd-grader",
+                "name" => "Summarize for 2nd Grader",
+                "icon" => "fa-solid fa-thought-bubble main-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "content"
+            ],
+            [
+                "_url" => "video-descriptions",
+                "name" => "Video Descriptions",
+                "icon" => "fa-brands fa-youtube blog-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "video"
+            ],
+            [
+                "_url" => "video-title",
+                "name" => "Video Titles",
+                "icon" => "fa-brands fa-youtube blog-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "video"
+            ],
+            [
+                "_url" => "youtube-tags-generator",
+                "name" => "Youtube Tags Generator",
+                "icon" => "fa-brands fa-youtube blog-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "video"
+            ],
+            [
+                "_url" => "video-scripts",
+                "name" => "Video Scripts",
+                "icon" => "fa-solid fa-film blog-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "video"
+            ],
+            [
+                "_url" => "meta-description",
+                "name" => "Meta Description",
+                "icon" => "fa-solid fa-memo-circle-info web-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "website"
+            ],
+            [
+                "_url" => "faqs",
+                "name" => "FAQs",
+                "icon" => "fa-solid fa-message-question web-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "website"
+            ],
+            [
+                "_url" => "faq-answers",
+                "name" => "FAQ Answers",
+                "icon" => "fa-solid fa-messages-question web-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "website"
+            ],
+            [
+                "_url" => "testimonials-reviews",
+                "name" => "Testimonials / Reviews",
+                "icon" => "fa-solid fa-star-sharp-half-stroke web-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "website"
+            ],
+            [
+                "_url" => "problem-agitate-solution",
+                "name" => "Problem Agitate Solution",
+                "icon" => "fa-solid fa-copyright web-icon",
+                "text" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "category" => "website"
+            ]
+        ];
+    }
+
+    public static function homepage()
+    {
+        return  [
+            [
+                "_url" => "blog-titles",
+                "name" => "Blog Titles",
+                "icon" => "fa-solid fa-message-text blog-icon",
+                "text" => "Make blogging fast and easy with RightWrite.io. Get creative, fresh titles with our state of the art technology!",
+                "category" => "blog"
+
+            ],
+            [
+                "_url" => "blog-sections",
+                "name" => "Blog Sections",
+                "icon" => "fa-solid fa-message-lines blog-icon",
+                "text" => "Unlock the power of incredible blog sections - organize your blog posts quickly and easily, without lifting a finger.",
+                "category" => "blog"
+            ],
+            [
+                "_url" => "blog-ideas",
+                "name" => "Blog Ideas",
+                "icon" => "fa-solid fa-message-dots blog-icon",
+                "text" => "Explore the world of blogging with us! Get great blog ideas and create content with ease.",
+                "category" => "blog"
+            ],
+            [
+                "_url" => "blog-intros",
+                "name" => "Blog Intros",
+                "icon" => "fa-solid fa-message-exclamation blog-icon",
+                "text" => "Write great blog intros in seconds - RightWrite.io creates the perfect starts to your blog posts!",
+                "category" => "blog"
+            ],
+            [
+                "_url" => "blog-conclusions",
+                "name" => "Blog Conclusions",
+                "icon" => "fa-solid fa-message-check blog-icon",
+                "text" => "Grow your audience and get great blog post conclusions that leave your readers wanting more!",
+                "category" => "blog"
+            ],
+            [
+                "_url" => "welcome-emails",
+                "name" => "Welcome Emails",
+                "icon" => "fa-solid fa-envelope-open-text main-icon",
+                "text" => "Experience the power of great welcome emails! Make your customers feel special with personalized email copy.",
+                "category" => "email"
+            ],
+            [
+                "_url" => "cold-emails",
+                "name" => "Cold Emails",
+                "icon" => "fa-solid fa-mailbox main-icon",
+                "text" => "Get great cold emails now! Just click a button and have RightWrite write it for you!",
+                "category" => "email"
+            ],
+            [
+                "_url" => "flow-up-emails",
+                "name" => "Follow-Up Emails",
+                "icon" => "fa-solid fa-reply-all main-icon",
+                "text" => "Amazing follow up emails have never been so easy! Experience the power of AI right now.",
+                "category" => "email"
+            ],
+            [
+                "_url" => "amazon-product-description",
+                "name" => "Amazon Product Descriptions",
+                "icon" => "fa-brands fa-amazon other-icon",
+                "text" => "Are you selling products on Amazon? Generate money making descriptions in seconds!",
+                "category" => "other"
+            ],
+            [
+                "_url" => "facebook-ads",
+                "name" => "Facebook Ads",
+                "icon" => "fa-brands fa-facebook social-icon",
+                "text" => "Quickly create high converting Facebook Ad copy without any of the headaches.",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "instagram-captions",
+                "name" => "Instagram Captions",
+                "icon" => "fa-brands fa-instagram social-icon",
+                'text' => "Engage with your audience on Instagram with intriguing captions written for you by RightWrite",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "instagram-hashtags-generator",
+                "name" => "Instagram Hashtags Generator",
+                "icon" => "fa-brands fa-instagram social-icon",
+                "text" => "Don't know what hashtags to use to make your Instagram posts easy to find? Let RightWrite do it for you!",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "social-media-posts-personal",
+                "name" => "Social Media Posts (Personal)",
+                "icon" => "fa-solid fa-thumbs-up social-icon",
+                "text" => "Create scroll stopping social media posts for your personal feeds and pages… all in a few clicks of a button!",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "socail-media-posts-business",
+                "name" => "Social Media Posts (Business)",
+                "icon" => "fa-solid fa-thumbs-up social-icon",
+                "text" => "Create scroll stopping social media posts for your business feeds and pages… all in a few clicks of a button!",
+                "category" => "social-media"
+            ],
+            [
+                "_url" => "facebook-headlines",
+                "name" => "Facebook Headlines",
+                "icon" => "fa-brands fa-facebook social-icon",
+                "text" => "Generate amazing, eyeball grabbing Facebook headlines in seconds right inside your RightWrite.io account.",
+                "category" => "social-media"
+            ]
+        ];
+    }
+}
