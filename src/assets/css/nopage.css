@@ -1,0 +1,46 @@
+.container_404 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  /* background-image: url(/img/files/world.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+.error-main {
+  background-color: #fff;
+  box-shadow: 0 20px 40px -12px rgb(0 0 0 / 10%);
+  border-radius: 1rem;
+}
+
+.error-main h1 {
+  font-weight: bold;
+  color: #1e1e2d;
+  font-size: 150px;
+  text-shadow: 2px 2px 5px #1e1e2d;
+}
+
+.error-main h6 {
+  font-family: "Poppins", sans-serif;
+  color: #42494f;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.error-main p {
+  color: #9897a0;
+  font-size: 15px;
+}
+
+.special-action-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  background-color: var(--btn-primary);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-transform: none;
+  font-weight: 700;
+  box-shadow: 0 5px 10px rgb(60 66 150 / 38%) !important;
+  border-radius: 35px !important;
+  transition: all 0.3s ease !important;
+}

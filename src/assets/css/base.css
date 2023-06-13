@@ -1,0 +1,93 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #1e1e2d;
+  text-align: left;
+  background: #f5f9fc;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary: #407bff;
+  --bg-dark-card: #242526;
+  --bg-primary: #407bff;
+  --bg-primary-hover: #6958be;
+  --bg-secondary: #fa057a;
+  --bg-secondary-hover: #fa057a;
+  --bg-gradient-primary: linear-gradient(to left, #be5fca 0%, #fe4e00 100%);
+
+  /* button */
+  --btn-primary: #407bff;
+  --btn-focus: #1e1e2d;
+  --btn-hover: #1e1e2d;
+  --btn-border-color: transparent;
+  --btn-text-color: #fff;
+  --btn-text-hover: #fff;
+
+  /* link, a css */
+  --link-color: var(--primary);
+  --link-hover: var(--bs-purple);
+  --link-text: #67748e;
+  --link-dec: none;
+  --link-dec-hover: none;
+
+  /* input color */
+  --border-color: var(--primary);
+
+  /* text css */
+  --text-light: #e4e6eb;
+  --text-primary: #1e1e2d;
+  --text-primary-mode: #fff;
+  --text-primary-hover: #58587a;
+  --text-secondary: #f72d66;
+  --text-secondary-hover: #f72d66;
+
+  /* icon css */
+  --icon-color: var(--bg-primary);
+  --icon-color-h: var(--link-hover);
+
+  /* box-shadow  */
+  --shadow-primary: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+
+  /* round  */
+  --round-none: 0;
+  --round-full: 100px;
+  --round-noraml: 4px;
+  --round-medium: 6px;
+}

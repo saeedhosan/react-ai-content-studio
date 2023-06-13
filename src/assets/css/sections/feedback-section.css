@@ -1,0 +1,118 @@
+/* ==========================================================================           
+ *
+ *    CUSTOMER FEEDBACKS SECTION STYLES
+ *
+ * ========================================================================== */
+#feedbacks-wrapper {
+  background: #fff;
+  padding: 0 0 128px 0;
+  /*------------------------------------------*/
+  /*    Feedback Commenter 
+    /*------------------------------------------*/
+  /*------------------------------------------*/
+  /*    Feedback Comment
+    /*------------------------------------------*/
+}
+#feedbacks-wrapper .container {
+  position: relative;
+}
+#feedbacks-wrapper .row {
+  display: block;
+}
+#feedbacks-wrapper .row .title h6 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1e1e2d;
+}
+#feedbacks-wrapper .row .title h6 span {
+  color: #fe4e00;
+}
+#feedbacks-wrapper .row .title p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+#feedbacks-wrapper .feedback .feedback-reviewer {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fe4e00;
+}
+#feedbacks-wrapper .feedback img {
+  padding: 3px;
+  border: 1px solid rgba(94, 109, 129, 0.3);
+  width: 70px;
+  height: 70px;
+}
+#feedbacks-wrapper .feedback .feedback-image {
+  text-align: center;
+  padding-left: 25px;
+}
+#feedbacks-wrapper .feedback .feedback-image .small-quote {
+  background-color: #ffa838;
+}
+#feedbacks-wrapper .feedback .feedback-image span {
+  position: relative;
+  top: -30px;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fe4e00;
+  color: #fff;
+  line-height: 20px;
+  font-size: 9px;
+}
+#feedbacks-wrapper .feedback {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#feedbacks-wrapper .feedback .comment {
+  font-size: 14px;
+  font-style: italic;
+}
+#feedbacks-wrapper .feedback .comment span {
+  font-size: 10px;
+}
+#feedbacks-wrapper .feedback span {
+  font-size: 12px;
+  color: rgba(94, 109, 129, 0.8);
+}
+
+.offers-prev,
+.offers-next {
+  position: absolute;
+  top: 65%;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.offers-prev i,
+.offers-next i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  color: #fe4e00;
+  line-height: 40px;
+  transition: all ease 0.3s;
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.08), 0 5px 5px 0 rgba(0, 0, 0, 0.1),
+    0 5px 2px -5px rgba(0, 0, 0, 0.16);
+}
+.offers-prev i:hover,
+.offers-prev i:focus,
+.offers-next i:hover,
+.offers-next i:focus {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 5px 5px 0 rgba(0, 0, 0, 0.1),
+    0 5px 2px -5px rgba(0, 0, 0, 0.16);
+  color: #ffa838;
+}
+
+.offers-prev {
+  left: -50px;
+}
+
+.offers-next {
+  right: -50px;
+}

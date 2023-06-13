@@ -1,0 +1,8 @@
+{
+  "app_name": "%VITE_APP_NAME%",
+  "app_title": "%VITE_APP_TITLE%",
+  "app_lang": "%VITE_APP_LANG%",
+  "app_desc": "%VITE_APP_DESCRIPTION%",
+  "app_prfx": "%VITE_APP_PREFIX%",
+  "app_favicon": "%VITE_APP_FAVICON%"
+}

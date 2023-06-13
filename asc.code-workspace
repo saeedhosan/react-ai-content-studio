@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "name": "Backend",
+      "path": "../../../../opt/lampp/htdocs/wordpress.com/wp-content/themes/appsaeed/"
+    },
+    {
+      "name": "Frontend",
+      "path": "./"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Frontend"
+  }
+}

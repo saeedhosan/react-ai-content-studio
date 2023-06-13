@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="%VITE_APP_LANG%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="%VITE_APP_KEYWORDS%" />
+    <meta name="description" content="%VITE_APP_DESCRIPTION%" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="%VITE_APP_FAVICON%" sizes="32x32" />
+    <link rel="icon" href="%VITE_APP_FAVICON%" sizes="192x192" />
+    <link rel="apple-touch-icon" href="%VITE_APP_FAVICON%" />
+    <title>%VITE_APP_TITLE%</title>
+    <script id="%VITE_APP_DATADIV%" type="appliction/json">
+      {
+        "app_name": "%VITE_APP_NAME%",
+        "app_title": "%VITE_APP_TITLE%",
+        "app_lang": "%VITE_APP_LANG%",
+        "app_logo": "%VITE_APP_LOGO%",
+        "app_desc": "%VITE_APP_DESCRIPTION%",
+        "app_favicon": "%VITE_APP_FAVICON%",
+        "app_basename": "%VITE_APP_BASEPATH%",
+        "app_rest_url": "%VITE_APP_REST_URL%"
+      }
+    </script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="app sidebar-mini">
+    <div id="%VITE_APP_ROOTDIV%"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
