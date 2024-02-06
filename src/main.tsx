@@ -15,18 +15,20 @@ import "./index.css";
 
 //components
 import axios from "axios";
+import Router from "./Router";
 import AuthProvider from "./api/context/AuthContext";
+import ContentProvider from "./api/context/ContentProvider";
 import endpoints from "./api/endpoints";
 import CustomerScript from "./app/CustomerScript";
 import settings from "./app/settings";
-import Router from "./Router";
 
 //consulasion
 export const Index = () => {
   axios.defaults.baseURL = endpoints.baseURL;
   axios.interceptors.request.use((config) => {
     config.baseURL = endpoints.baseURL;
-    config.withCredentials = false;
+    config.withCredentials = true;
+    config.headers.Authorization = "Bearer " + window.btoa('saeed:jDlL YB1A A81Z BiNk bgbZ cCA1')
     return config;
   });
   // if (storage) {
@@ -36,9 +38,11 @@ export const Index = () => {
       <BrowserRouter basename={settings.app_basename}>
         <ToastContainer />
         <CustomerScript />
-        <AuthProvider>
-          <Router />
-        </AuthProvider>
+        <ContentProvider>
+          <AuthProvider>
+            <Router />
+          </AuthProvider>
+        </ContentProvider>
       </BrowserRouter>
     </QueryClientProvider>
   );

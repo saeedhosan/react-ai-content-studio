@@ -4,7 +4,6 @@ export default {
   image: {
     login,
     signup,
-    footer_logo:
-      "http://localhost/wordpress.com/wp-content/uploads/2023/05/icon-128.png",
+    footer_logo: import.meta.env.VITE_APP_LOGO || '',
   },
 };

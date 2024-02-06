@@ -1,23 +1,11 @@
-interface SettingsTypes {
-  app_url: string;
-  app_name: string;
-  app_title: string;
-  app_lang: string;
-  app_logo: string | null;
-  app_desc: string;
-  app_favicon: string | null;
-  app_basename: string;
-  app_rest_url: string;
-  auth_session: string;
-  app_currency: string;
-}
+
 
 import data from "./settingJson";
 import { unslash } from "./utils/url";
 
 const __url = window.location.protocol + "//" + window.location.host;
 
-const settings: SettingsTypes = {
+const settings = {
   /**
    * app url
    */

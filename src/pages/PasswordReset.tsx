@@ -38,7 +38,7 @@ export default function PasswordReset() {
     axios
       .post("/password-reset", { key: user_key, username, password })
       .then(({ data }) => {
-        console.log(data);
+
         if (data?.success) {
           toast.success(data?.message);
           setPasword("");

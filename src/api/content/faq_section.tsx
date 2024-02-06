@@ -1,13 +1,9 @@
 import settings from "../../app/settings";
 
 export default {
-  content: {
-    title: `Frequently Asked Questions`,
-    text: `Here are a few questions we've answered for you.`,
-  },
   faqs: [
     {
-      question: `What is ?`,
+      question: `What is ${settings.app_name}?`,
       answer: `${settings.app_name} is an AI-powered writing service that helps you create content quickly and easily. With ${settings.app_name}, you can create high-quality content in less time, with no risk of plagiarism.`,
     },
     {

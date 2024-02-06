@@ -9,6 +9,7 @@ export default {
   posts: "/posts",
   _post: "/post/?slug=",
   contact: "/messages",
+  home_sections: '/home_sections',
 
   /**
    * protected api

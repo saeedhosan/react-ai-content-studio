@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { borderRound, extartError } from "../../app/utils/convert";
 import { dpath } from "../../app/utils/url";
-import Textarea from "../../components/dashboard/Textarea";
 import Inputbox from "../../components/Inputbox";
+import Textarea from "../../components/dashboard/Textarea";
 export default function SupportCreate() {
   const [loading, setLoading] = useState(false);
   const [subject, setSubject] = useState("");
@@ -57,7 +57,6 @@ export default function SupportCreate() {
         }
       })
       .catch((err) => {
-        console.log(err);
         toast.error(extartError(err));
       })
       .finally(() => {

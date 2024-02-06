@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import template_section from "../../api/content/template_section";
+import { useContent } from "../../api/context/ContentProvider";
 import { borderRound } from "../../app/utils/convert";
 import { dpath } from "../../app/utils/url";
 import FeaturesHeader from "../FeaturesHeader";
 
 export default function TemplateSection(): JSX.Element {
-  const templates = template_section?.templates || [];
-
+  const content = useContent('template_section', template_section);
   return (
     <section id="features-templage">
       <div className="container">
@@ -16,8 +16,8 @@ export default function TemplateSection(): JSX.Element {
         />
         {/* LIST OF SOLUTIONS */}
         <div className="row d-flex">
-          {templates &&
-            templates?.map((item, key) => (
+          {content.templates &&
+            content.templates?.map((item, key) => (
               <div key={key} className="col-lg-4 col-md-6 col-sm-12">
                 <Link to={dpath(`/templates/${item._url}`)}>
                   <div className="template" style={{ marginBottom: "2.6rem" }}>

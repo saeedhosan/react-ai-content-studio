@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
-import endpoints from "./endpoints";
 import { PostResponseType } from "./ResponseType";
+import endpoints from "./endpoints";
 
 export default function usePost(
   slug: string | number

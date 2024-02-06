@@ -1,17 +1,16 @@
 import plan_section from "../../api/content/plan_section";
-import { PlanResponseType } from "../../api/ResponseType";
-import usePlans from "../../api/usePlans";
+import { useContent } from "../../api/context/ContentProvider";
 import FeaturesHeader from "../FeaturesHeader";
 import Loader from "../loader/Loader";
 import { SubsctionPlan } from "../SubscriptionPlan";
 export default function PlanSection() {
-  const plans = usePlans();
+  const content = useContent('plan_section', plan_section)
   return (
     <section id="prices-wrapper">
       <div className="container">
         <FeaturesHeader
-          title={plan_section?.content?.title}
-          text={plan_section?.content?.text}
+          title={content?.content?.title}
+          text={content?.content?.text}
         />
         {/* END SECTION TITLE */}
         <div className="row">
@@ -20,8 +19,8 @@ export default function PlanSection() {
               <div className="tab-content">
                 <div className="tab-pane fade show active" id="monthly_plans">
                   <div className="row justify-content-md-center">
-                    {plans ? (
-                      plans?.map((plan: PlanResponseType, _k: number) => (
+                    {content.plans ? (
+                      content.plans?.map((plan, _k: number) => (
                         <SubsctionPlan key={_k} plan={plan} />
                       ))
                     ) : (

@@ -5,18 +5,18 @@ import ReactQuill from "react-quill";
 import { useParams } from "react-router-dom";
 import Select from "react-select";
 import { toast } from "react-toastify";
-import template_section from "../../api/content/template_section";
 import { DocumentResponseType } from "../../api/ResponseType";
+import template_section from "../../api/content/template_section";
 import useSubscription from "../../api/useSubscription";
 import { copyToClipboard } from "../../app/utils/clipboard";
 import { borderRound, extartError } from "../../app/utils/convert";
 import exportTopdf, { exportToDocs } from "../../app/utils/exports";
 import { seoToString } from "../../app/utils/url";
+import Inputbox from "../../components/Inputbox";
 import { customSelect } from "../../components/customSelect";
 import BlanceStatus from "../../components/dashboard/BlanceStatus";
 import Editor from "../../components/dashboard/Editor";
 import Textarea from "../../components/dashboard/Textarea";
-import Inputbox from "../../components/Inputbox";
 
 export default function DSTemplate() {
   const { slug } = useParams();

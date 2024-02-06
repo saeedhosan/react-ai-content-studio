@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { PlanResponseType } from "../api/ResponseType";
+import plan_section from "../api/content/plan_section";
 import { borderRound, currencyToSymbol } from "../app/utils/convert";
 import { dpath } from "../app/utils/url";
 
-export function SubsctionPlan({ plan }: { plan: PlanResponseType }) {
+export function SubsctionPlan({ plan }: { plan: typeof plan_section.plans[0] }) {
   const defautl_items = [
     "0 words",
     "0 images",
@@ -11,6 +11,7 @@ export function SubsctionPlan({ plan }: { plan: PlanResponseType }) {
     "Unlimited access",
     "Full time support",
   ];
+
   const items = plan?.items ? JSON.parse(plan?.items) : defautl_items;
   return (
     <div className="col-md-4 col-sm-12">

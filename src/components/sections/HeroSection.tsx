@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
-import hero_section from "../../api/content/hero_section";
+import hero_section_ from "../../api/content/hero_section";
+import { useContent } from "../../api/context/ContentProvider";
 import pagespath from "../../api/pagespath";
 import { borderRound } from "../../app/utils/convert";
 import { getAuthSession } from "../../app/utils/storage";
@@ -9,6 +10,7 @@ import { dpath } from "../../app/utils/url";
 
 export default function HeroSection() {
   const type_id = "bannar_typed";
+  const hero_section = useContent<typeof hero_section_>('hero_section', hero_section_);
   useEffect(() => {
     let _typed: Typed;
     if (document.querySelector(`#${type_id}`)) {
@@ -95,6 +97,8 @@ export default function HeroSection() {
 
 function Hearhard() {
   const user = getAuthSession();
+  const hero_section = useContent<typeof hero_section_>('hero_section', hero_section_);
+
   if (user) {
     return (
       <Link

@@ -1,20 +1,21 @@
 import faq_section from "../../api/content/faq_section";
+import { useContent } from "../../api/context/ContentProvider";
 import { borderRound } from "../../app/utils/convert";
 import FeaturesHeader from "../FeaturesHeader";
 
 export default function FaqSection(): JSX.Element {
-  const faqs = faq_section?.faqs || [];
+  const faq_content = useContent('faq_section', faq_section);
   return (
     <section id="faq-wrapper">
       <div className="container">
         <FeaturesHeader
-          title={faq_section?.content?.title}
-          text={faq_section?.content?.text}
+          title={`Frequently Asked Questions`}
+          text={`Here are a few questions we've answered for you.`}
         />
         <div className="row justify-content-md-center">
           <div className="col-md-10">
-            {faqs?.length > 0 &&
-              faqs.map((faq, key) => (
+            {faq_content.faqs?.length > 0 &&
+              faq_content.faqs.map((faq, key) => (
                 <div
                   key={key}
                   id="accordion"
