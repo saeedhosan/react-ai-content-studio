@@ -5,13 +5,10 @@ import endpoints from "./endpoints";
 import { PlansResponseType } from "./ResponseType";
 
 export default function usePlans(): PlansResponseType | null {
-  const [plans, setPlans] = useState<PlansResponseType | null>(null);
-  const { data } = useQuery(
-    ["plans"],
-    async () => await axios.get(endpoints.plans)
-  );
-  useEffect(() => {
-    if (data?.data?.data) setPlans(data?.data?.data);
-  }, [data]);
-  return plans;
+    const [plans, setPlans] = useState<PlansResponseType | null>(null);
+    const { data } = useQuery(["plans"], async () => await axios.get(endpoints.plans));
+    useEffect(() => {
+        if (data?.data) setPlans(data?.data);
+    }, [data]);
+    return plans;
 }
