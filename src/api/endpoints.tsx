@@ -15,4 +15,6 @@ export default {
      */
     dashboard: "/dashboard",
     documents: "/documents",
+    images: "/images.json",
+    subscription: "subscription.json",
 };
