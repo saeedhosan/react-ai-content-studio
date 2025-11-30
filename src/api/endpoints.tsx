@@ -2,7 +2,7 @@ import settings from "../app/settings";
 
 export default {
     baseURL: settings.app_rest_url,
-    signup: "/signup",
+    signup: "/signup.json",
     login: "/login",
     _user: "/user.json",
     plans: "/plans.json",

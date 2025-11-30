@@ -7,6 +7,7 @@
 :root {
   --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Pro";
 }
+
 @font-face {
   font-family: "Font Awesome 6 Pro";
   font-style: normal;
@@ -15,14 +16,15 @@
   src: url(./fa-solid-900.woff2) format("woff2"),
     url(./fa-solid-900.ttf) format("truetype");
 }
+
 /* @font-face {
    font-family: "Font Awesome 6 Pro";
    font-style: normal;
    font-weight: 900;
    font-display: block;
-   src: url(https://appsaeed.github.io/assets/css/icons/fa-solid-900.woff2)
+   src: url(https://saeedhosan.github.io/assets/css/icons/fa-solid-900.woff2)
        format("woff2"),
-     url(https://appsaeed.github.io/assets/css/icons/fa-solid-900.ttf)
+     url(https://saeedhosan.github.io/assets/css/icons/fa-solid-900.ttf)
        format("truetype");
  } */
 .fa-solid,
