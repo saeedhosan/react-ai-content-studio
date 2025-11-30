@@ -1,4 +1,4 @@
-interface SettingsTypes {
+interface Settings {
     app_url: string;
     app_name: string;
     app_title: string;
@@ -12,12 +12,11 @@ interface SettingsTypes {
     app_currency: string;
 }
 
-import data from "./settingJson";
 import { unslash } from "./utils/url";
 
 const __url = window.location.protocol + "//" + window.location.host;
 
-const settings: SettingsTypes = {
+const settings: Settings = {
     /**
      * app url
      */
@@ -25,38 +24,38 @@ const settings: SettingsTypes = {
     /**
      * app_name
      */
-    app_name: data?.app_name || "app_name",
+    app_name: import.meta.env.VITE_APP_NAME || "Acsion",
 
     /**
      * app_title
      */
-    app_title: data?.app_title || "app_title",
+    app_title: import.meta.env.VITE_APP_TITLE || "AI content studio",
 
     /**
      * app logo
      */
-    app_logo: data.app_logo || "",
+    app_logo: import.meta.env.VITE_APP_LOGO || "/public/logo.png",
 
     /**
      * app lang
      */
-    app_lang: data?.app_lang || "en-US",
+    app_lang: "en-US",
 
     /**
      * app description
      */
-    app_desc: data?.app_desc || "",
+    app_desc: import.meta.env.VITE_APP_DESCRIPTION || "The SPA applicaion is supper and faster.",
 
     /**
      * app favicon
      */
-    app_favicon: data?.app_favicon || "",
+    app_favicon: import.meta.env.VITE_APP_FAVICON || "/favicon.png",
 
     /**
      * app base route
      */
 
-    app_basename: data?.app_basename || "",
+    app_basename: import.meta.env.VITE_APP_BASEPATH || "",
 
     /**
      * app currency
@@ -67,11 +66,11 @@ const settings: SettingsTypes = {
     /**
      * app rest url
      */
-    app_rest_url: unslash(data.app_rest_url || ""),
+    app_rest_url: import.meta.env.VITE_APP_REST_URL || "/fake-api",
 
     /**
      * app stroage name
      */
-    auth_session: import.meta.env.VITE_AUTH_SESSTION || "",
+    auth_session: import.meta.env.VITE_AUTH_SESSTION || "83F900JWEKIEDW",
 };
 export default settings;
