@@ -3,7 +3,7 @@ import settings from "../app/settings";
 export default {
     baseURL: settings.app_rest_url,
     signup: "/signup.json",
-    login: "/login",
+    login: "/login.json",
     _user: "/user.json",
     plans: "/plans.json",
     posts: "/posts.json",
