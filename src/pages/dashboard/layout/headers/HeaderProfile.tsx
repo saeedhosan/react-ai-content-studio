@@ -9,39 +9,33 @@ export default function HeaderProfile() {
     const menus = [
         {
             name: "My Account",
-            _url: dpath("/profile"),
+            link: dpath("/profile"),
             icon: "profile-icon fa-solid fa-id-badge",
-            async: true,
         },
         {
             name: "Templates",
             icon: "profile-icon fa-solid fa-microchip-ai",
-            _url: dpath("/templates"),
-            sync: true,
+            link: dpath("/templates"),
         },
         {
             name: "Affiliate Program",
             icon: "profile-icon fa-solid fa-badge-dollar",
-            _url: dpath("/affilate"),
-            sync: true,
+            link: dpath("/affilate"),
         },
         {
             name: "Purchase History",
             icon: "profile-icon fa-solid fa-money-check-pen",
-            _url: dpath("/purchase"),
-            sync: true,
+            link: dpath("/purchase"),
         },
         {
             name: "Support Request",
             icon: "profile-icon fa-solid fa-messages-question",
-            _url: dpath("/supports"),
-            sync: true,
+            link: dpath("/supports"),
         },
         {
             name: "Logout",
             icon: "profile-icon fa-solid fa-right-from-bracket",
-            _url: "/logout",
-            sync: false,
+            link: "/logout",
         },
     ];
     return (
@@ -64,23 +58,12 @@ export default function HeaderProfile() {
 
                 {user ? (
                     menus &&
-                    menus.map((menu, k) => {
-                        if (menu?.sync) {
-                            return (
-                                <Link key={k} className="dropdown-item d-flex" to={menu?._url}>
-                                    <span className={menu?.icon} />
-                                    <div className="fs-12">{menu?.name}</div>
-                                </Link>
-                            );
-                        } else {
-                            return (
-                                <a key={k} className="dropdown-item d-flex" href={menu?._url}>
-                                    <span className={menu?.icon} />
-                                    <div className="fs-12">{menu?.name}</div>
-                                </a>
-                            );
-                        }
-                    })
+                    menus.map((menu, k) => (
+                        <Link key={k} className="dropdown-item d-flex" to={menu?.link}>
+                            <span className={menu?.icon} />
+                            <div className="fs-12">{menu?.name}</div>
+                        </Link>
+                    ))
                 ) : (
                     <SettingToLoader count={4} />
                 )}
