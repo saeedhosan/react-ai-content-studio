@@ -4,6 +4,7 @@ import DataTable from "react-data-table-component";
 import Select from "react-select";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
+import endpoints from "../../api/endpoints";
 import { ImageResponseType } from "../../api/ResponseType";
 import useImages from "../../api/useImages";
 import useSubscription from "../../api/useSubscription";
@@ -52,7 +53,7 @@ function ImageGenerator() {
 
         setLoading(true);
         axios
-            .post("/image/create", {
+            .post(endpoints.images_create, {
                 prompt,
                 size: size.value,
                 title,
@@ -220,7 +221,7 @@ function Showimges() {
             if (result.isConfirmed) {
                 (async () => {
                     try {
-                        const resp = await axios.post("/image/delete?id=" + id);
+                        const resp = await axios.post(endpoints.images_delete + id);
                         const data = resp.data;
                         if (data?.success) {
                             toast.success(data.message);

@@ -14,7 +14,16 @@ export default {
      * protected api
      */
     dashboard: "/dashboard",
-    documents: "/documents",
     images: "/images.json",
+    images_create: "/images/create.json",
+    images_delete: "/images/delete.json?id",
     subscription: "subscription.json",
+
+    //documents
+    documents: {
+        index: "/documents/index.json",
+        create: "/documents/create.json",
+        delete: "/documents/delete.json",
+        update: "/documents/update.json",
+    },
 };

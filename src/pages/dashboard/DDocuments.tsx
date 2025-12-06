@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
 import template_section from "../../api/content/template_section";
+import endpoints from "../../api/endpoints";
 import { DocumenteArrayResponseType, DocumentResponseType } from "../../api/ResponseType";
 import useDocuments from "../../api/useDocuments";
 import { dbTodate, dbTotime } from "../../app/utils/datetime";
@@ -52,7 +53,7 @@ export default function DDocuments() {
             if (result.isConfirmed) {
                 // Swal.fire("Saved!", "", "success");
                 axios
-                    .post("/documents/delete", { id })
+                    .post(endpoints.documents.delete, { id })
                     .then(({ data }) => {
                         if (data?.success) {
                             Swal.fire("deleted", "", "success");

@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import Select from "react-select";
 import { toast } from "react-toastify";
 import template_section from "../../api/content/template_section";
+import endpoints from "../../api/endpoints";
 import { DocumentResponseType } from "../../api/ResponseType";
 import useSubscription from "../../api/useSubscription";
 import { copyToClipboard } from "../../app/utils/clipboard";
@@ -40,7 +41,7 @@ export default function DSTemplate() {
     const [loading, setLoading] = useState(false);
     const [response, setResponse] = useState<DocumentResponseType | null>(null);
 
-    const maxtextlenght = 4000;
+    const maxTextLength = 4000;
 
     //generator
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -49,8 +50,8 @@ export default function DSTemplate() {
             toast.error("What do you need written?");
             return false;
         }
-        if (maxToken > maxtextlenght) {
-            toast.error(`You typed max length: ${maxToken} we are allowed ${maxtextlenght}`);
+        if (maxToken > maxTextLength) {
+            toast.error(`You typed max length: ${maxToken} we are allowed ${maxTextLength}`);
             return false;
         }
         const _prompt = prompt ? prompt : search?.name;
@@ -64,10 +65,10 @@ export default function DSTemplate() {
             model: model.value,
         };
         axios
-            .post("/documents/create", _data)
+            .post(endpoints.documents.create, _data)
             .then(({ data }) => {
                 if (data?.success) {
-                    setResponse(data);
+                    setResponse(data?.data);
                     toast.success(data?.message);
                 } else {
                     toast.error(errorToString(data));
@@ -154,7 +155,7 @@ export default function DSTemplate() {
 
                                 <div className="col-sm-6 col-md-6">
                                     <Inputbox
-                                        max={maxtextlenght}
+                                        max={maxTextLength}
                                         label="Max Result Length"
                                         value={maxToken}
                                         type="number"
@@ -221,7 +222,7 @@ function ShowGenerated({ document }: { document: DocumentResponseType | null }) 
     const handleSave = (e: React.FormEvent) => {
         e.preventDefault();
         axios
-            .post("/documents/update", {
+            .post(endpoints.documents.update, {
                 id: document?.id,
                 docs_name: docs_name,
                 html: content,

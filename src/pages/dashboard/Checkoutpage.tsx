@@ -185,7 +185,10 @@ export default function Checkoutpage() {
                                         // panelLabel="Give Money"
                                         amount={amount}
                                         currency={settings.app_currency}
-                                        stripeKey={import.meta.env.VITE_APP_STRIPE_KEY || "no_key"}
+                                        stripeKey={
+                                            import.meta.env.VITE_APP_STRIPE_KEY ||
+                                            "pk_test_51SUrjGIFHTSamGf8cERU737CLws1YAKLyY640daPW0xLPEsmT8ggIalVChNq2zzZisJf72twT2JH7LAqF4eYpl0l00fN0jHSP5"
+                                        }
                                         email={email}
                                         // shippingAddress
                                         // billingAddress={false}

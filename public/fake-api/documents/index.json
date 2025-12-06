@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "uid": "DOC-1001",
+        "user_id": 7,
+        "blog_name": "marketing",
+        "blog_title": "Modern Social Media Strategy",
+        "docs_name": "social-media-strategy",
+        "word_used": 742,
+        "description": "This document demonstrates generated content used for testing. Replace with your live API for real data.",
+        "text": "Social media has become the core pillar of modern marketing. To succeed, brands must focus on value-driven storytelling...",
+        "html": "<p>Social media has become the core pillar of modern marketing. To succeed, brands must focus on value-driven storytelling...</p>",
+        "options": "{\"tone\":\"professional\",\"style\":\"long-form\"}",
+        "status": "1",
+        "language": "en",
+        "created_at": "2025-01-12 10:22:45",
+        "updated_at": "2025-01-12 10:22:45"
+    },
+    {
+        "id": 2,
+        "uid": "DOC-1002",
+        "user_id": 7,
+        "blog_name": "blogging",
+        "blog_title": "How to Start a Tech Blog",
+        "docs_name": "start-tech-blog",
+        "word_used": 512,
+        "description": "This placeholder document helps demonstrate listing, viewing, and deleting inside the dashboard.",
+        "text": "Starting a tech blog begins with choosing a niche, defining your audience, and creating a consistent publishing routine...",
+        "html": "<p>Starting a tech blog begins with choosing a niche, defining your audience, and creating a consistent publishing routine...</p>",
+        "options": "{\"tone\":\"friendly\",\"style\":\"guide\"}",
+        "status": "1",
+        "language": "en",
+        "created_at": "2025-01-15 14:05:10",
+        "updated_at": "2025-01-15 14:05:10"
+    },
+    {
+        "id": 3,
+        "uid": "DOC-1003",
+        "user_id": 7,
+        "blog_name": "seo",
+        "blog_title": "SEO Optimization Template",
+        "docs_name": "seo-template",
+        "word_used": 389,
+        "description": "This SEO template is a fake API response created only for testing purposes.",
+        "text": "Search engine optimization requires structured headings, relevant keywords, and content depth that satisfies user intent...",
+        "html": "<p>Search engine optimization requires structured headings, relevant keywords, and content depth that satisfies user intent...</p>",
+        "options": "{\"tone\":\"technical\",\"style\":\"template\"}",
+        "status": "0",
+        "language": "en",
+        "created_at": "2025-02-01 09:12:33",
+        "updated_at": "2025-02-01 09:12:33"
+    }
+]
