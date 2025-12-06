@@ -12,7 +12,7 @@ export default {
     plans: "/plans.json",
     posts: "/posts.json",
     _post: "/post.json/?slug=",
-    contact: "/messages",
+    contact: "/contact.json",
 
     //protected api
     subscription: "/subscription.json",

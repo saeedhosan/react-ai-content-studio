@@ -11,36 +11,32 @@ import FeaturesHeader from "../FeaturesHeader";
 export default function ContactSection() {
     //contact section data
     const user = getAuthSession();
-    const [fname, setFname] = useState(user?.nickname || "");
-    const [lname, setLname] = useState("");
+    const [name, setName] = useState(user?.nickname || "");
     const [email, setEmail] = useState(user?.usermail || "");
-    const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
     const [errors, setErrors] = useState("");
 
     useEffect(() => {
         if (user) {
-            setFname(user?.nickname);
+            setName(user?.nickname);
             setEmail(user?.usermail);
         }
     }, [user]);
 
     function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
-        if (!fname) {
+        if (!name) {
             setErrors("Please Type Your name");
         } else if (!email) {
             setErrors("Please enter Your email address");
-        } else if (!phone) {
-            setErrors("Please enter your phone number");
         } else if (!message) {
             setErrors("Write somthing");
         } else {
             setLoading(true);
             (async () => {
                 try {
-                    const _data = { fname, lname, email, message, phone };
+                    const _data = { name, email, message };
                     const response = await axios.post(endpoints.contact, _data);
                     if (response.data?.success) {
                         toast.success(response.data?.message);
@@ -97,29 +93,12 @@ export default function ContactSection() {
                                             className={`form-control ${borderRound("round-full")}`}
                                             name="name"
                                             autoComplete="off"
-                                            placeholder="First Name"
-                                            value={fname}
-                                            onChange={(e) => setFname(e.target.value)}
+                                            placeholder="Full Name"
+                                            value={name}
+                                            onChange={(e) => setName(e.target.value)}
                                         />
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-sm-12">
-                                    <div className="input-box mb-4">
-                                        <input
-                                            id="lastname"
-                                            type="text"
-                                            className={`form-control ${borderRound("round-full")}`}
-                                            name="lastname"
-                                            autoComplete="off"
-                                            placeholder="Last Name"
-                                            required
-                                            value={lname}
-                                            onChange={(e) => setLname(e.target.value)}
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row justify-content-md-center">
                                 <div className="col-md-6 col-sm-12">
                                     <div className="input-box mb-4">
                                         <input
@@ -132,20 +111,6 @@ export default function ContactSection() {
                                             required
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-md-6 col-sm-12">
-                                    <div className="input-box mb-4">
-                                        <input
-                                            id="phone"
-                                            type="text"
-                                            className={`form-control ${borderRound("round-full")}`}
-                                            name="phone"
-                                            placeholder="Phone Number"
-                                            required
-                                            value={phone}
-                                            onChange={(e) => setPhone(e.target.value)}
                                         />
                                     </div>
                                 </div>
