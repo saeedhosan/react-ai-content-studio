@@ -7,15 +7,15 @@ export default {
             items: [
                 {
                     name: "Account",
-                    _url: "/user/dashboard",
+                    _url: "/user/profile",
                 },
                 {
                     name: "Contact",
-                    _url: "/contact",
+                    _url: "#",
                 },
                 {
-                    name: "Help",
-                    _url: "/Help",
+                    name: "Support",
+                    _url: "#",
                 },
             ],
         },
@@ -23,12 +23,16 @@ export default {
             title: "Legal Services",
             items: [
                 {
-                    name: "Privacy Policy",
-                    _url: "/privacy-policy",
+                    name: "Terms of Service",
+                    _url: "#",
                 },
                 {
-                    name: "Terms of Service",
-                    _url: "/terms-of-service",
+                    name: "Privacy Policy",
+                    _url: "#",
+                },
+                {
+                    name: "Refund Policy",
+                    _url: "#",
                 },
             ],
         },
@@ -45,7 +49,7 @@ export default {
                 },
                 {
                     name: "Contact us",
-                    _url: "/contact-us",
+                    _url: "#",
                 },
             ],
         },
