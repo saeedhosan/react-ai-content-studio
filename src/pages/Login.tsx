@@ -42,7 +42,7 @@ export default function Login() {
                     if (response.data?.user) {
                         setAuthSession(response.data?.user);
                         setTimeout(() => {
-                            navigate("/");
+                            navigate("/user");
                         }, 1000);
                     }
                     _setLoading(false);

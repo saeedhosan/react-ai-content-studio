@@ -48,9 +48,7 @@ export default function Signup() {
                     if (response.data?.user) {
                         toast.success(response.data?.message);
                         setAuthSession(response.data?.user);
-                        setTimeout(() => {
-                            navigate("/user");
-                        }, 1000);
+                        navigate("/user");
                     } else {
                         toast.error(errorToString(response));
                     }
