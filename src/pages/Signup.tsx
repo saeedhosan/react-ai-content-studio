@@ -44,12 +44,12 @@ export default function Signup() {
                         password,
                         nickname,
                     };
-                    const response = await axios.post(endpoints?.signup, _data);
+                    const response = await axios.post(endpoints?.auth.signup, _data);
                     if (response.data?.user) {
                         toast.success(response.data?.message);
                         setAuthSession(response.data?.user);
                         setTimeout(() => {
-                            navigate("/");
+                            navigate("/user");
                         }, 1000);
                     } else {
                         toast.error(errorToString(response));

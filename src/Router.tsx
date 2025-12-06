@@ -15,6 +15,7 @@ import Pricingplan from "./pages/dashboard/Pricingplan";
 import Purchasepage from "./pages/dashboard/Purchasepage";
 import SupportCreate from "./pages/dashboard/SupportCreate";
 import Supportpage from "./pages/dashboard/Supportpage";
+import Affiliate from "./pages/dashboard/Affiliate";
 import ForgetPassword from "./pages/ForgetPassword";
 import Homepage from "./pages/Homepage";
 import Login from "./pages/Login";
@@ -67,6 +68,7 @@ export default function Router() {
                             <Route index element={<Dashboard />} />
                             <Route path={"dashboard"} element={<Dashboard />} />
                             <Route path={"profile"} element={<Profile />} />
+                            <Route path={"affilate"} element={<Affiliate />} />
                             <Route path={"templates"} element={<DTemplates />} />
                             <Route path={"templates/:slug"} element={<DSTemplate />} />
                             <Route path={"ducuments"} element={<DDocuments />} />

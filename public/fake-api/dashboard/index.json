@@ -1,0 +1,219 @@
+{
+    "images_all": 245,
+    "words_used": 15890,
+    "charts_data": [
+        {
+            "date": "2025-12-01",
+            "words": 1200,
+            "images": 10
+        },
+        {
+            "date": "2025-12-02",
+            "words": 1500,
+            "images": 12
+        },
+        {
+            "date": "2025-12-03",
+            "words": 2000,
+            "images": 15
+        },
+        {
+            "date": "2025-12-04",
+            "words": 1700,
+            "images": 8
+        },
+        {
+            "date": "2025-12-05",
+            "words": 2100,
+            "images": 20
+        },
+        {
+            "date": "2025-12-06",
+            "words": 1900,
+            "images": 18
+        },
+        {
+            "date": "2025-12-07",
+            "words": 2200,
+            "images": 22
+        },
+        {
+            "date": "2025-12-08",
+            "words": 2400,
+            "images": 25
+        },
+        {
+            "date": "2025-12-09",
+            "words": 2000,
+            "images": 15
+        },
+        {
+            "date": "2025-12-10",
+            "words": 2300,
+            "images": 20
+        },
+        {
+            "date": "2025-12-11",
+            "words": 1800,
+            "images": 14
+        },
+        {
+            "date": "2025-12-12",
+            "words": 2100,
+            "images": 16
+        },
+        {
+            "date": "2025-12-13",
+            "words": 1950,
+            "images": 12
+        },
+        {
+            "date": "2025-12-14",
+            "words": 2500,
+            "images": 28
+        },
+        {
+            "date": "2025-12-15",
+            "words": 2200,
+            "images": 20
+        },
+        {
+            "date": "2025-12-16",
+            "words": 2400,
+            "images": 22
+        },
+        {
+            "date": "2025-12-17",
+            "words": 2300,
+            "images": 19
+        },
+        {
+            "date": "2025-12-18",
+            "words": 2600,
+            "images": 25
+        },
+        {
+            "date": "2025-12-19",
+            "words": 2000,
+            "images": 15
+        },
+        {
+            "date": "2025-12-20",
+            "words": 2100,
+            "images": 18
+        },
+        {
+            "date": "2025-12-21",
+            "words": 2250,
+            "images": 20
+        },
+        {
+            "date": "2025-12-22",
+            "words": 2400,
+            "images": 23
+        },
+        {
+            "date": "2025-12-23",
+            "words": 2500,
+            "images": 25
+        },
+        {
+            "date": "2025-12-24",
+            "words": 2300,
+            "images": 21
+        },
+        {
+            "date": "2025-12-25",
+            "words": 2200,
+            "images": 19
+        },
+        {
+            "date": "2025-12-26",
+            "words": 2450,
+            "images": 24
+        },
+        {
+            "date": "2025-12-27",
+            "words": 2600,
+            "images": 27
+        },
+        {
+            "date": "2025-12-28",
+            "words": 2550,
+            "images": 26
+        },
+        {
+            "date": "2025-12-29",
+            "words": 2400,
+            "images": 22
+        },
+        {
+            "date": "2025-12-30",
+            "words": 2350,
+            "images": 20
+        }
+    ],
+    "active_plan": {
+        "id": 102,
+        "name": "Pro Plan",
+        "price": 79.99,
+        "image": null,
+        "words": 10000,
+        "slug": "pro-plan",
+        "billing_cycle": "monthly",
+        "created_at": "2025-11-30 10:00:00",
+        "custom_order": null,
+        "description": "Pro plan with higher limits for words and images.",
+        "frequency_unit": "month",
+        "is_default": 0,
+        "is_popular": 1,
+        "items": null,
+        "options": "{\"auto_renew\":true,\"model\":\"gpt-4.1\"}",
+        "status": "active",
+        "uid": "PLAN-102",
+        "updated_at": "2025-12-01 09:00:00",
+        "user_id": null
+    },
+    "subscription": {
+        "id": "SUB-2025-002",
+        "uid": "SUB-2025-002",
+        "user_id": 7,
+        "plan_id": 102,
+        "payment_method": "paypal",
+        "words": 10000,
+        "image": 100,
+        "options": "{\"auto_renew\":true}",
+        "status": "active",
+        "paid": 79.99,
+        "payment_claimed": 79.99,
+        "current_period_ends_at": "2026-01-01 10:00:00",
+        "start_at": "2025-12-01 10:00:00",
+        "end_at": "2026-01-01 10:00:00",
+        "end_period_last_days": 5,
+        "plan": {
+            "id": 102,
+            "name": "Pro Plan",
+            "price": 79.99,
+            "image": null,
+            "words": 10000,
+            "slug": "pro-plan",
+            "billing_cycle": "monthly",
+            "created_at": "2025-11-30 10:00:00",
+            "custom_order": null,
+            "description": "Pro plan with higher limits for words and images.",
+            "frequency_unit": "month",
+            "is_default": 0,
+            "is_popular": 1,
+            "items": null,
+            "options": "{\"auto_renew\":true,\"model\":\"gpt-4.1\"}",
+            "status": "active",
+            "uid": "PLAN-102",
+            "updated_at": "2025-12-01 09:00:00",
+            "user_id": null
+        },
+        "created_at": "2025-12-01 10:00:00",
+        "updated_at": "2025-12-01 10:00:00"
+    },
+    "created_docs": 35,
+    "template_used": 12
+}

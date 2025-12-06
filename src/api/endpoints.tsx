@@ -1,23 +1,37 @@
 import settings from "../app/settings";
 
 export default {
+    //auth
+    auth: {
+        user: "/auth/user.json",
+        signin: "/auth/signin.json",
+        signup: "/auth/signup.json",
+        logout: "/auth/logout.json",
+    },
     baseURL: settings.app_rest_url,
-    signup: "/signup.json",
-    login: "/login.json",
-    _user: "/user.json",
     plans: "/plans.json",
     posts: "/posts.json",
     _post: "/post.json/?slug=",
     contact: "/messages",
 
-    /**
-     * protected api
-     */
-    dashboard: "/dashboard",
-    images: "/images.json",
-    images_create: "/images/create.json",
-    images_delete: "/images/delete.json?id",
-    subscription: "subscription.json",
+    //protected api
+    subscription: "/subscription.json",
+
+    //images
+    images: {
+        index: "/images/index.json",
+        create: "/images/create.json",
+        delete: "/images/delete.json",
+        update: "/images/update.json",
+    },
+
+    //documents
+    dashboard: {
+        index: "/dashboard/index.json",
+        create: "/dashboard/create.json",
+        delete: "/dashboard/delete.json",
+        update: "/dashboard/update.json",
+    },
 
     //documents
     documents: {

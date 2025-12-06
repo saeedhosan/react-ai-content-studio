@@ -53,7 +53,7 @@ function ImageGenerator() {
 
         setLoading(true);
         axios
-            .post(endpoints.images_create, {
+            .post(endpoints.images.create, {
                 prompt,
                 size: size.value,
                 title,
@@ -221,7 +221,7 @@ function Showimges() {
             if (result.isConfirmed) {
                 (async () => {
                     try {
-                        const resp = await axios.post(endpoints.images_delete + id);
+                        const resp = await axios.post(endpoints.images.delete + id);
                         const data = resp.data;
                         if (data?.success) {
                             toast.success(data.message);

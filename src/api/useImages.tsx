@@ -7,7 +7,7 @@ import endpoints from "./endpoints";
 export default function useImages() {
     const [images, setImages] = useState<ImageArrayResponseType | null>(null);
 
-    const { data, refetch } = useQuery(["images"], async () => axios.get(endpoints.images));
+    const { data, refetch } = useQuery(["images"], async () => axios.get(endpoints.images.index));
 
     useEffect(() => {
         if (data?.data) {

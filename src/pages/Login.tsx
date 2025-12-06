@@ -37,7 +37,7 @@ export default function Login() {
                         password: password,
                         remember: remember,
                     };
-                    const response = await axios.post(endpoints.login, _data);
+                    const response = await axios.post(endpoints.auth.signin, _data);
                     toast.success(response.data?.message);
                     if (response.data?.user) {
                         setAuthSession(response.data?.user);
