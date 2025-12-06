@@ -1,0 +1,54 @@
+[
+    {
+        "comment_ID": 101,
+        "comment_post_ID": 1,
+        "comment_author": "John Doe",
+        "comment_author_email": "john@example.com",
+        "comment_author_url": "https://johndoe.com",
+        "comment_subject": "New feature request",
+        "comment_date": "2025-12-06 10:15:30",
+        "comment_date_gmt": "2025-12-06 04:15:30",
+        "comment_content": "This is a demo comment to show how the support system works.",
+        "comment_karma": "0",
+        "comment_approved": "1",
+        "comment_agent": "Mozilla/5.0",
+        "comment_parent": 0,
+        "user_id": 7,
+        "children": [
+            {
+                "comment_ID": 102,
+                "comment_post_ID": 1,
+                "comment_author": "Jane Smith",
+                "comment_author_email": "jane@example.com",
+                "comment_author_url": null,
+                "comment_subject": "New feature extension request",
+                "comment_date": "2025-12-06 11:00:00",
+                "comment_date_gmt": "2025-12-06 05:00:00",
+                "comment_content": "Replying to John’s demo comment for demonstration purposes.",
+                "comment_karma": "0",
+                "comment_approved": "1",
+                "comment_agent": "Mozilla/5.0",
+                "comment_parent": 101,
+                "user_id": 8,
+                "children": []
+            }
+        ]
+    },
+    {
+        "comment_ID": 103,
+        "comment_post_ID": 1,
+        "comment_author": "Alice Brown",
+        "comment_author_email": "alice@example.com",
+        "comment_author_url": null,
+        "comment_subject": "Request new template",
+        "comment_date": "2025-12-06 12:30:00",
+        "comment_date_gmt": "2025-12-06 06:30:00",
+        "comment_content": "Another demo comment showing multiple top-level comments.",
+        "comment_karma": "0",
+        "comment_approved": "1",
+        "comment_agent": "Mozilla/5.0",
+        "comment_parent": 0,
+        "user_id": 9,
+        "children": []
+    }
+]

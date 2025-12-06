@@ -27,7 +27,7 @@ export default function Supportpage() {
     const showMessage = (row: SupportResponseType) => {
         Swal.fire({
             title: "Support details",
-            html: `<div><b>Subject:</b> ${row?.comment_author_IP}</div>
+            html: `<div><b>Subject:</b> ${row?.comment_subject}</div>
              <style>a{color:#fe4e00}</style>
              <div class="mt-4">${row?.comment_content}</div>
             `,
@@ -45,7 +45,7 @@ export default function Supportpage() {
     useMemo(() => {
         let fileterd = null;
         fileterd = comments?.filter((item) => {
-            const name = item && item.comment_author_IP ? item.comment_author_IP : "";
+            const name = item && item.comment_subject ? item.comment_subject : "";
             const finder = search && search?.toString().toLowerCase();
             return name.toString().toLowerCase().includes(finder);
         });
@@ -79,7 +79,7 @@ export default function Supportpage() {
         {
             name: <b className="text-uppercase">subject</b>,
             selector: (row: SupportResponseType) => {
-                return <span>{row?.comment_author_IP}</span>;
+                return <span>{row?.comment_subject}</span>;
             },
         },
         {

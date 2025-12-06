@@ -2,6 +2,7 @@ import axios from "axios";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import endpoints from "../../api/endpoints";
 import { borderRound } from "../../app/utils/convert";
 import { dpath } from "../../app/utils/url";
 import { errorToString } from "../../app/utils/utils";
@@ -44,7 +45,7 @@ export default function SupportCreate() {
         formData.append("message", message);
 
         axios
-            .post("/supports/create", formData, {
+            .post(endpoints.supports.create, formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

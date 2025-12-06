@@ -26,4 +26,19 @@ export default {
         delete: "/documents/delete.json",
         update: "/documents/update.json",
     },
+
+    //supports
+    supports: {
+        index: "/supports/index.json",
+        create: "/supports/create.json",
+        delete: "/supports/delete.json",
+        update: "/supports/update.json",
+    },
+    //supports
+    purchaseLogs: {
+        index: "/purchase-logs/index.json",
+        create: "/purchase-logs/create.json",
+        delete: "/purchase-logs/delete.json",
+        update: "/purchase-logs/update.json",
+    },
 };
