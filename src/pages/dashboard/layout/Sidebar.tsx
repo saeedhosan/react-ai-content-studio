@@ -17,6 +17,11 @@ export default function Sidebar() {
             icon="lead-3 fa-solid fa-chart-tree-map"
             path={dpath("/")}
           />
+          <SidebarList
+            name="Profile"
+            icon="fa-solid fa-id-badge"
+            path={dpath("/profile")}
+          />
 
           <SidebarList
             name="Templates"

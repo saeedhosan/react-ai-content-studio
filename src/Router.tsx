@@ -22,6 +22,7 @@ import Logout from "./pages/Logout";
 import Nopage from "./pages/Nopage";
 import PasswordReset from "./pages/PasswordReset";
 import Signup from "./pages/Signup";
+import Profile from "./pages/dashboard/Profile";
 
 //Auth router
 function AuthRoute({ jsx }: { jsx: JSX.Element }) {
@@ -65,6 +66,7 @@ export default function Router() {
                         <Route path={"/user"} element={<PrivateRoute jsx={<Layout />} />}>
                             <Route index element={<Dashboard />} />
                             <Route path={"dashboard"} element={<Dashboard />} />
+                            <Route path={"profile"} element={<Profile />} />
                             <Route path={"templates"} element={<DTemplates />} />
                             <Route path={"templates/:slug"} element={<DSTemplate />} />
                             <Route path={"ducuments"} element={<DDocuments />} />
