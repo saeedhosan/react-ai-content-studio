@@ -55,7 +55,7 @@ const settings: Settings = {
      * app base route
      */
 
-    app_basename: import.meta.env.VITE_APP_BASEPATH || "",
+    app_basename: import.meta.env.VITE_BASENAME || "",
 
     /**
      * app currency
