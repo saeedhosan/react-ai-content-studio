@@ -128,13 +128,16 @@ export default function Supportpage() {
             setLoading(true);
             (async () => {
                 try {
-                    const _data = {
+                    const data = {
                         username,
                         email: usermail,
                         message: message,
                         comment_id: commentid,
                     };
-                    const response = await axios.post(`/supports/reply`, _data);
+                    //const response = await axios.post(`/supports/reply`, data);
+
+                    //only for demo
+                    const response = await axios.get(`/supports/reply`, { data });
                     const res = response.data;
                     if (res?.success) {
                         toast.success(res?.message);

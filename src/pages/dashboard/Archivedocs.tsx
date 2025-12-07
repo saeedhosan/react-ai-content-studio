@@ -24,8 +24,9 @@ export default function Archivedocs() {
 
     //fetch document on server
     useEffect(() => {
+        // axios.post("/documents/archive", { id: docs_id })
         axios
-            .post("/documents/archive", { id: docs_id })
+            .get("/documents/archive", { data: { id: docs_id } })
             .then(({ data }) => {
                 if (data?.success) {
                     setArchive(data?.archive);

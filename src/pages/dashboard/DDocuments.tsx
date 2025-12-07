@@ -52,8 +52,11 @@ export default function DDocuments() {
         }).then((result) => {
             if (result.isConfirmed) {
                 // Swal.fire("Saved!", "", "success");
+                //axios.post(endpoints.documents.delete, { id })
+
+                //only for demo
                 axios
-                    .post(endpoints.documents.delete, { id })
+                    .get(endpoints.documents.delete, { data: { id } })
                     .then(({ data }) => {
                         if (data?.success) {
                             Swal.fire("deleted", "", "success");

@@ -37,7 +37,8 @@ export default function ContactSection() {
             (async () => {
                 try {
                     const _data = { name, email, message };
-                    const response = await axios.post(endpoints.contact, _data);
+                    const response = await axios.get(endpoints.contact, { data: _data }); //only for demo
+                    //const response = await axios.post(endpoints.contact, _data);
                     if (response.data?.success) {
                         toast.success(response.data?.message);
                         setMessage("");

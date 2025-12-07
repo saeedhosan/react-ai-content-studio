@@ -32,12 +32,15 @@ export default function Login() {
             _setLoading(true);
             (async () => {
                 try {
-                    const _data = {
+                    const data = {
                         username: username.trim().toString(),
                         password: password,
                         remember: remember,
                     };
-                    const response = await axios.post(endpoints.auth.signin, _data);
+
+                    //only for demo
+                    const response = await axios.get(endpoints.auth.signin, { data });
+                    //const response = await axios.post(endpoints.auth.signin, data);
                     toast.success(response.data?.message);
                     if (response.data?.user) {
                         setAuthSession(response.data?.user);

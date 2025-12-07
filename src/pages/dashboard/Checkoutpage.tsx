@@ -46,8 +46,9 @@ export default function Checkoutpage() {
             payment_data: token,
             plan_id: plan_id,
         };
+        //axios.post("/checkout/stripe", charge_data)
         axios
-            .post("/checkout/stripe", charge_data)
+            .get("/checkout/stripe", { data: charge_data })
             .then(({ data }) => {
                 if (data?.success) {
                     toast.success(data?.message);

@@ -39,12 +39,15 @@ export default function Signup() {
             setLoading(true);
             (async () => {
                 try {
-                    const _data = {
+                    const data = {
                         usermail,
                         password,
                         nickname,
                     };
-                    const response = await axios.post(endpoints?.auth.signup, _data);
+
+                    //only for demo
+                    const response = await axios.get(endpoints?.auth.signup, { data });
+                    //const response = await axios.post(endpoints?.auth.signup, data);
                     if (response.data?.user) {
                         toast.success(response.data?.message);
                         setAuthSession(response.data?.user);

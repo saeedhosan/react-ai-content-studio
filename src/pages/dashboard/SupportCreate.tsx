@@ -44,8 +44,11 @@ export default function SupportCreate() {
         formData.append("subject", subject);
         formData.append("message", message);
 
+        //axios.post(endpoints.supports.create, formData, {
+
+        //only for demo
         axios
-            .post(endpoints.supports.create, formData, {
+            .get(endpoints.supports.create, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

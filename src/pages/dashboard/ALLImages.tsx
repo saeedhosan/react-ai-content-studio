@@ -52,11 +52,16 @@ function ImageGenerator() {
         }
 
         setLoading(true);
+
+        //only for demo
+        // axios.post(endpoints.images.create, {
         axios
-            .post(endpoints.images.create, {
-                prompt,
-                size: size.value,
-                title,
+            .get(endpoints.images.create, {
+                data: {
+                    prompt,
+                    size: size.value,
+                    title,
+                },
             })
             .then(({ data }) => {
                 if (data?.success) {
@@ -221,7 +226,9 @@ function Showimges() {
             if (result.isConfirmed) {
                 (async () => {
                     try {
-                        const resp = await axios.post(endpoints.images.delete + id);
+                        //only for demo
+                        const resp = await axios.get(endpoints.images.delete + id);
+                        //const resp = await axios.post(endpoints.images.delete + id);
                         const data = resp.data;
                         if (data?.success) {
                             toast.success(data.message);

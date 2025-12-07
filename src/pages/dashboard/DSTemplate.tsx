@@ -56,7 +56,7 @@ export default function DSTemplate() {
         }
         const _prompt = prompt ? prompt : search?.name;
         setLoading(true);
-        const _data = {
+        const data = {
             blog_name: _title,
             prompt: _prompt,
             temperature: temperature.value,
@@ -64,8 +64,11 @@ export default function DSTemplate() {
             template: search?.name,
             model: model.value,
         };
+        //axios.post(endpoints.documents.create, data)
+
+        //only for demo
         axios
-            .post(endpoints.documents.create, _data)
+            .get(endpoints.documents.create, { data })
             .then(({ data }) => {
                 if (data?.success) {
                     setResponse(data?.data);

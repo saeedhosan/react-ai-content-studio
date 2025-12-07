@@ -14,7 +14,8 @@ export function useAuth(): UserResponseType | null {
 
 export default function AuthProvider({ children }: { children: ReactNode }) {
     const [user, setUser] = useState<UserResponseType | null>(null);
-    const { data } = useQuery(["user"], async () => axios.post(endpoints.auth.user));
+    const { data } = useQuery(["user"], async () => axios.get(endpoints.auth.user)); // only for demo
+    //const { data } = useQuery(["user"], async () => axios.post(endpoints.auth.user));
 
     useEffect(() => {
         const storage = getAuthSession();
