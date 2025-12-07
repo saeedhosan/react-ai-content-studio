@@ -12,9 +12,12 @@ interface Settings {
     app_currency: string;
 }
 
+import favicon from "../../public/favicon.png";
+import logo from "../../public/logo.png";
 import { unslash } from "./utils/url";
 
 const __url = window.location.protocol + "//" + window.location.host;
+const fake_api = `/${unslash(import.meta.env.VITE_BASENAME || "")}/fake-api`;
 
 const settings: Settings = {
     /**
@@ -34,7 +37,7 @@ const settings: Settings = {
     /**
      * app logo
      */
-    app_logo: import.meta.env.VITE_APP_LOGO || "/public/logo.png",
+    app_logo: import.meta.env.VITE_APP_LOGO || logo,
 
     /**
      * app lang
@@ -49,7 +52,7 @@ const settings: Settings = {
     /**
      * app favicon
      */
-    app_favicon: import.meta.env.VITE_APP_FAVICON || "/favicon.png",
+    app_favicon: import.meta.env.VITE_APP_FAVICON || favicon,
 
     /**
      * app base route
@@ -66,7 +69,7 @@ const settings: Settings = {
     /**
      * app rest url
      */
-    app_rest_url: import.meta.env.VITE_APP_REST_URL || "/fake-api",
+    app_rest_url: import.meta.env.VITE_APP_REST_URL || fake_api,
 
     /**
      * app stroage name
